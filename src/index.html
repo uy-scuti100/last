@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="/public/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="mx-auto flex justify-between items-center p-5 relative max-w-[1000px] md:p-8">
+        <img src="/src/images/logo.svg" alt="/">
+        <ul id="navigation"
+            class="absolute top-0 hidden pt-6 pr-5 h-screen w-[300px] right-0 bg-Off-white text-Very-dark-blue z-20 leading-10 md:hidden">
+            <div class="pb-32">
+                <i id="toggleoff" class="fa-solid fa-times float-right text-4xl cursor-pointer"></i>
+            </div>
+
+            <li><a class="p-7 text-xl" href="/">Home</a></li>
+            <li><a class="p-7 text-xl" href="/">New</a></li>
+            <li><a class="p-7 text-xl" href="/">Trending</a></li>
+            <li><a class="p-7 text-xl" href="/">Categories</a></li>
+        </ul>
+        <div class="md:hidden">
+            <i id="menu" class="fa-solid fa-bars text-3xl cursor-pointer"></i>
+        </div>
+
+        <!-- medium navbar -->
+        <ul class="hidden md:flex md:space-x-4">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">New</a></li>
+            <li><a href="/">Popular</a></li>
+            <li><a href="/">Trending</a></li>
+            <li><a href="/">Categories</a></li>
+        </ul>
+
+    </nav>
+    <!-- overlay -->
+    <div class="fixed  overlay top-0 left-0 w-full h-screen bg-Dark-grayish-blue/80 hidden z-10 md:hidden"></div>
+
+
+
+    <!-- hero section  for mobile-->
+    <section class=" flex flex-col md:hidden">
+        <div class="p-5 max-h[200px]">
+            <img class="" src="./images/image-web-3-mobile.jpg" alt="/">
+        </div>
+
+        <div class="p-5">
+            <h1 class="text-5xl font-bold">The Bright <br> Future of Web 3.0?</h1>
+        </div>
+
+        <div class="p-5">
+            <p class="text-Dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of
+                the
+                platforms back into the
+                hands of the people.But is it really fulfilling its promise?</p>
+        </div>
+
+        <div class="p-5 ">
+            <button class="p-3 px-8 text-Off-white bg-Soft-red uppercase tracking-[.5rem]">
+                Read <span class="ml-1">More</span>
+
+            </button>
+        </div>
+
+    </section>
+
+    <!-- cars cARD SECTION -->
+    <section class="m-5 bg-Very-dark-blue md:hidden">
+        <h2 class="text-Soft-orange text-4xl p-5 font-bold">New</h2>
+        <h3 class="text-Off-white text-[26px] p-5 font-bold ">Hydrogen VS Electric Cars</h3>
+        <p class="text-Dark-grayish-blue font-bold px-5">Will hydrogen-fueled cars ever catch up to EVs?</p>
+
+        <div class="border border-b-Off-white m-5"></div>
+
+        <h3 class="text-Off-white text-[26px] p-5 font-bold ">The Downsides of AI Artistry</h3>
+        <p class="text-Dark-grayish-blue font-bold px-5">What are the possible adverse effects of on-demand AI image
+            generation?</p>
+
+
+        <div class="border border-b-Off-white m-5"></div>
+
+        <h3 class="text-Off-white text-[26px] p-5 font-bold ">Is VC Funding Drying Up?</h3>
+        <p class="text-Dark-grayish-blue font-bold pb-10 px-5">Private funding by VC firms is down 50% YOY. We take a
+            look at
+            what that means.</p>
+
+
+    </section>
+
+    <section class="p-5 flex flex-col mt-20 md:hidden">
+        <div class="flex mb-10">
+            <div class="mr-5">
+                <img src="./images/image-retro-pcs.jpg" alt="">
+            </div>
+            <div>
+                <h1 class="text-Dark-grayish-blue font-bold text-5xl">01</h1>
+                <h2 class="text-Very-dark-blue  font-bold text-2xl">Reviving Retro PCs</h2>
+                <p class="text-Dark-grayish-blue font-bold text-base">What happens when old PCs are given modern
+                    upgrades?
+                </p>
+
+            </div>
+        </div>
+
+        <div class="flex mb-10">
+            <div class="mr-5">
+                <img src="./images/image-top-laptops.jpg" alt="">
+            </div>
+            <div>
+                <h1 class="text-Dark-grayish-blue font-bold text-5xl">02</h1>
+                <h2 class="text-Very-dark-blue  font-bold text-2xl"> Top 10 Laptops of 2022</h2>
+                <p class="text-Dark-grayish-blue font-bold text-base">Our best picks for various needs and budgets.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="flex mb-10">
+            <div class="mr-5">
+                <img class="object-fit" src="./images/image-gaming-growth.jpg" alt="">
+            </div>
+            <div>
+                <h1 class="text-Dark-grayish-blue font-bold text-5xl">03</h1>
+                <h2 class="text-Very-dark-blue  font-bold text-2xl">The Growth of Gaming</h2>
+                <p class="text-Dark-grayish-blue font-bold text-base"> How the pandemic has sparked fresh opportunities.
+                </p>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- mobile ends here -->
+
+    <!-- medium screens and larger -->
+
+    <section class="hidden md:grid p-8 mx-auto grid-cols-3 grid-row-2 gap-x-5 max-w-[1000px]">
+        <div class="col-span-2 row-span-1">
+            <img class="object-center object-cover" src="./images/image-web-3-desktop.jpg" alt="/">
+        </div>
+
+        <div class="col-span-1 row-span-2  bg-Very-dark-blue">
+            <h2 class="text-Soft-orange text-3xl px-5 pt-3 font-bold">New</h2>
+            <h3 class="text-Off-white text-[23px] px-5 font-bold ">Hydrogen VS Electric Cars</h3>
+            <p class="text-Dark-grayish-blue text-sm font-bold pb-2 px-5">Will hydrogen-fueled cars ever catch up to
+                EVs?</p>
+
+            <div class="border border-b-Off-white mx-5"></div>
+
+            <h3 class="text-Off-white text-[23px] px-5 font-bold ">The Downsides of AI Artistry</h3>
+            <p class="text-Dark-grayish-blue text-sm font-bold pb-2 px-5">What are the possible adverse effects of
+                on-demand AI image
+                generation?</p>
+
+
+            <div class="border border-b-Off-white mx-5"></div>
+
+            <h3 class="text-Off-white text-[23px] px-5 font-bold ">Is VC Funding Drying Up?</h3>
+            <p class="text-Dark-grayish-blue text-sm font-bold pb-2 px-5">Private funding by VC firms is down 50% YOY.
+                We take
+                a
+                look at
+                what that means.</p>
+
+        </div>
+
+        <div class="md:col-span-1 row-span-1">
+            <div class="p-5">
+                <h1 class="text-5xl font-bold">The Bright <br> Future of Web 3.0?</h1>
+            </div>
+        </div>
+
+
+        <div class=" col-span-1 row-span-1 mt-4">
+            <p class="text-Dark-grayish-blue">We dive into the next evolution of the web that claims to put the
+                power of
+                the
+                platforms back into the
+                hands of the people.But is it really fulfilling its promise?
+            </p>
+            <div class="pt-5 ">
+                <button class="p-3 px-8 text-Off-white bg-Soft-red uppercase tracking-[.5rem]">
+                    Read <span class="ml-1">More</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden md:p-9 md:flex md:space-x-6 max-w-[1000px] mx-auto mt-20 ">
+        <div class="flex  items-center mb-10">
+            <div class="mr-5">
+                <img class="h-full" src="./images/image-retro-pcs.jpg" alt="">
+            </div>
+            <div>
+                <h1 class="text-Dark-grayish-blue font-bold text-5xl">01</h1>
+                <h2 class="text-Very-dark-blue font-bold text-2xl">Reviving Retro PCs</h2>
+                <p class="text-Dark-grayish-blue font-bold text-sm">What happens when old PCs are given modern
+                    upgrades?
+                </p>
+
+            </div>
+        </div>
+
+        <div class="flex items-center mb-10">
+            <div class="mr-5">
+                <img class="h-full" src="./images/image-top-laptops.jpg" alt="">
+            </div>
+            <div>
+                <h1 class="text-Dark-grayish-blue font-bold text-5xl">02</h1>
+                <h2 class="text-Very-dark-blue  font-bold text-xl"> Top 10 Laptops of 2022</h2>
+                <p class="text-Dark-grayish-blue font-bold text-sm">Our best picks for various needs and budgets.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="flex items-center mb-10">
+            <div class="mr-5">
+                <img class="h-full" src="./images/image-gaming-growth.jpg" alt="">
+            </div>
+            <div>
+                <h1 class="text-Dark-grayish-blue font-bold text-5xl">03</h1>
+                <h2 class="text-Very-dark-blue  font-bold text-xl">The Growth of Gaming</h2>
+                <p class="text-Dark-grayish-blue font-bold text-sm"> How the pandemic has sparked fresh opportunities.
+                </p>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">UY SCUTI</a>.
+    </div>
+
+    <script src="/src/index.js"></script>
+
+</body>
+
+</html>
